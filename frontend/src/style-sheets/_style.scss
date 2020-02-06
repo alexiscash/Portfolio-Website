@@ -1,0 +1,13 @@
+$colors: (
+    primary: red,
+    secondary: green
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body {
+    background-color: color(secondary);
+}
+
